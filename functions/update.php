@@ -1,6 +1,6 @@
 <?php
 include ('connect.php');
-if (isset($_POST['model'])) {
+if (isset($_POST['d'])) {
     $id = $_POST['id'];
     $Name = $_POST['imiona_nazwisko'];
     $Date = $_POST['data_urodzenia'];
@@ -10,7 +10,8 @@ if (isset($_POST['model'])) {
     
     
 
-$sql = "UPDATE swiadectwa_uczniowie SET imiona_nazwisko=$Name, data_urodzenia = $Date, miejsce_urodzenia=$Place, numer_pesel=$Pesel WHERE id=$id'";
+
+    $sql = "UPDATE swiadectwa_uczniowie SET imiona_nazwisko='$Name', data_urodzenia = '$Date', miejsce_urodzenia='$Place', numer_pesel='$Pesel' WHERE id='$id'";
     mysqli_query($conn, $sql);
     mysqli_close($conn);
 };

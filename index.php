@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <a href="uczniowie.php"><button>Uczniowie</button></a>
-        <a href="uczniowie.php"><button>Świadectwa</button></a>
+        <a href="swiadectwa.php"><button>Świadectwa</button></a>
     </div>
 </body>
 </html>
